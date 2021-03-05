@@ -9,6 +9,7 @@ extern "C" {
 #include "sdkconfig.h"
 }
 namespace esp32 {
+    // represents the root SPI host
     class spi_host {
         spi_host_device_t m_host_id;
         esp_err_t m_last_error;
@@ -53,7 +54,7 @@ namespace esp32 {
             m_last_error = rhs.m_last_error;
             return *this;
         }
-        esp_err_t lastError() const {
+        esp_err_t last_error() const {
             return m_last_error;
         }
         spi_host_device_t host_id() const {
