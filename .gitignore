@@ -4,5 +4,4 @@
 .vscode/launch.json
 .vscode/ipch
 main.c
-main.cpp
 main.txt
